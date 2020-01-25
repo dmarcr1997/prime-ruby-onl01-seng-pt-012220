@@ -1,14 +1,19 @@
 require 'pry'
 def prime?(num)
-  range = (-100..100).to_a
+  range = (-2..100).to_a
   if (num == 2)
     return true
   elsif(num == 1 or num == -1)
     return false
   end
   range.find do |n|
-    if (num!=n)
-      return false if num%n == 0
+    if num!=n
+      return false if num% n == 0
+    end
+  end
+   range2.find do |n|
+    if num!=n
+      return false if num% n == 0
     end
   end
   return true
