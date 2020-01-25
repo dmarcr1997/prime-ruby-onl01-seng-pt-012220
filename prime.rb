@@ -10,5 +10,10 @@ def prime?(num)
       return false if num% n == 0
     end
   end
+   range2.find do |n|
+    if num!=n
+      return false if num% n == 0
+    end
+  end
   return true
 end
