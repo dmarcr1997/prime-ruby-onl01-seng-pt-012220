@@ -4,9 +4,12 @@ def prime?(num)
   range.find do |n|
     if (num == n)
       
-    else
-      return false if num% n == 0
+    elsif (num ==2)
+      return true 
+    end  
+    return false if num% n == 0
     end
+    return true
   end
   
 end
