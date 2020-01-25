@@ -1,4 +1,4 @@
-# Add  code here!
+require 'pry'
 def prime?(num)
   range = (2..100).to_a
   range2 =(-2..-100)
@@ -19,3 +19,5 @@ def prime?(num)
   end
   return true
 end
+
+binding.pry
