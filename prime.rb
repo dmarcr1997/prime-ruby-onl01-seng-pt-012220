@@ -1,6 +1,7 @@
 # Add  code here!
 def prime?(num)
-  range = (1..100).to_a
+  range = (2..100).to_a
+  range2 =(-2..-100)
   if num == 2
     return true
   end
