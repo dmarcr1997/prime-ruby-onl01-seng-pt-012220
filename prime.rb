@@ -2,7 +2,7 @@ require 'pry'
 def prime?(num)
   range = (2..100).to_a
   range2 =(-2..-100).to_a
-  value = false
+  value = true
   if (num == 2)
     return true
   elsif(num == 1 or num == -1)
@@ -18,7 +18,6 @@ def prime?(num)
       value = false if num% n == 0
     end
   end
-  value = true
   return value
 end
 
