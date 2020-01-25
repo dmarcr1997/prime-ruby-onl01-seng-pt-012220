@@ -1,5 +1,12 @@
 # Add  code here!
 def prime?(num)
-  return true if (num%2 != 0 or num == 2)and (num != 0 )
-  false
+  range = (2..100).to_a
+  range.find do |n|
+    if (num == n)
+      pass
+    else
+      return false if num% n == 0
+    end
+  end
+  
 end
