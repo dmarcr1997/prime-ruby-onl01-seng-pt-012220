@@ -7,5 +7,5 @@ def prime?(num)
   range.find do |n|
     return false if num% n == 0
   end
-    return true
+  return true
 end
